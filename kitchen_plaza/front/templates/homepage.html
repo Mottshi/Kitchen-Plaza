@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title%}<title>KITCHEN PLAZA</title>{% endblock %}
+    {% load static %}<link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Sail&family=Signika&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <meta name="description" content="food delivery">
+    <meta name="keywords" content="food, Chinese food, Russian food, Italian food, Vegan food">
+</head>
+<body>
+    <section class="page1">
+        <div class="page1-background"></div>
+        <div class="name">Kitchen Plaza
+            <div class="addname">fast · tasty · affordable</div>
+        </div>
+    </section>
+
+    <section class="page2">
+        <div class="page2-gradient"></div>
+        <div class="page2-list">
+            <div class="page2-img"></div>
+            <div class="page2-block">
+                <div class="page2-block_element">
+                    <h2>138</h2>
+                    <span>menu items</span>
+                </div>
+                <div class="page2-block_element">
+                    <h2>300+</h2>
+                    <span>visitors everyday</span>
+                </div>
+                <div class="page2-block_element">
+                    <h2>45</h2>
+                    <span>people of good staff</span>
+                </div>
+                <div class="page2-block_element">
+                    <h2>12</h2>
+                    <span>years of experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page3">
+        <h1>Menu</h1>
+        <a href="" class="block_of_type">
+            {% load static %}<img src="{% static 'img/pngegg.png'%}" class="block_of_type-img">
+            <div class="block_of_type-text">
+                <h1>Chinese food</h1>
+                <span>Chinese cuisine is one of the most unusual in the world. The Chinese traditionally eat with wooden sticks, which requires great skill from the uninitiated. In addition, the ingredients for cooking many Chinese dishes are quite specific: snake meat, shark fins, various small animals and insects.</span>
+            </div>
+        </a>
+        <a href="" class="block_of_type">
+            {% load static %}<img src="{% static 'img/pngwing.com.png'%}" class="block_of_type-img">
+            <div class="block_of_type-text">
+                <h1>Russian food</h1>
+                <span>Every nation has authentic dishes that every tourist is recommended to try. The food of Russia is an introduction to the way of people's life and immersion in traditions. Not all Russian dishes that were prepared five hundred years ago can be tasted now. But some of the recipes are still popular and show the diversity of Russian cuisine.</span>
+            </div>
+        </a>
+        <a href="" class="block_of_type">
+           {% load static %} <img src="{% static 'img/pngwing.com(2).png'%}" class="block_of_type-img">
+            <div class="block_of_type-text">
+                <h1>Italian food</h1>
+                <span><p>Italian cuisine appears before us in all its diversity. An interesting fact is that in different regions of the country, traditions and recipes for cooking dishes differ from each other. </p><p>The northern district has always been famous for cattle breeding and the main products that the residents used for food — butter, milk, meat (and meat is usually served in whole pieces, and chopped is used to make sauce). The South provided a good harvest of fruits and vegetables, herbs were grown here, which were then added to food. Residents of the south enjoy eating lobsters, shrimps, lobsters, clams, cuttlefish.</p></span>
+            </div>
+        </a>
+        <a href="" class="block_of_type">
+            {% load static%}<img src="{% static 'img/kisspng-roti-vegetarian-cuisine-mediterranean-cuisine-buff-chapathi-5ac18640e3d670.3414451715226322569332.png' %}" class="block_of_type-img">
+            <div class="block_of_type-text">
+                <h1>Vegan food</h1>
+                <span>Many still doubt that vegan food can be satisfying - they say you can't eat without meat or cheese. And the fact that vegetables can be delicious and easy to prepare is perceived skeptically even more often. Our daily diet somehow includes dishes without meat, fish, eggs and dairy products, but even the most omnivorous of us have at least once in our lives puzzled over which ones to choose for a dinner party so that everyone would be satisfied - both meat-eaters and vegans.</span>
+            </div>
+        </a>
+    </section>
+
+    <section class="page4">
+        <div class="page4-img"></div>
+        <div class="page4-block">
+            <h1>Order food</h1>
+            <form class="form" method="POST">
+                <h1 class="form-text">your name</h1>
+                <input type="text" class="form-input form-name">
+                <h1 class="form-text">your number</h1>
+                <input type="tel" class="form-input form-number">
+                <h1 class="form-text">description</h1>
+                <textarea type="text" class="form-input form-description"></textarea>
+                <input type="submit" value="order" class="form-submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
